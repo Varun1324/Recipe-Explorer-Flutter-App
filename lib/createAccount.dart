@@ -19,7 +19,7 @@ class SignUp extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 1000,
-          color: Colors.black,
+          color: const Color.fromARGB(255, 255, 255, 255),
         ),
         Padding(
           padding: EdgeInsets.all(50),

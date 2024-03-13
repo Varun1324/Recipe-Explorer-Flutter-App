@@ -56,12 +56,12 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 250, left: 40, right: 40),
+            margin: EdgeInsets.only(top: 150, left: 25, right: 25),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 500,
+                  width: 400,
                   height: 370,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(25),
@@ -82,7 +82,8 @@ class LoginPage extends StatelessWidget {
                       ),
                       SizedBox(height: 15.0),
                       Text("Sign into Continue",style: GoogleFonts.poppins(textStyle:TextStyle(fontWeight: FontWeight.w400))),
-                      SizedBox(height: 30.0),
+                      //SizedBox(height: 10.0),
+                      Padding(padding: EdgeInsets.all(20),child: 
                       TextField(
                         controller: usernameController,
                         decoration: InputDecoration(
@@ -98,7 +99,9 @@ class LoginPage extends StatelessWidget {
                           border: OutlineInputBorder(),
                         ),
                       ),
-                      SizedBox(height: 30.0),
+                      ),
+                      //SizedBox(height: 5.0),
+                      Padding(padding: EdgeInsets.all(20),child: 
                       TextField(
                         controller: passwordController,
                         decoration: InputDecoration(
@@ -115,7 +118,8 @@ class LoginPage extends StatelessWidget {
                         ),
                         obscureText: true,
                       ),
-                      SizedBox(height: 30.0),
+                      ),
+                      //SizedBox(height: 10.0),
                       ElevatedButton(
                         onPressed: () => authenticate(context),
                         child: Text('LOGIN'),
@@ -127,11 +131,11 @@ class LoginPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 16.0),
+                SizedBox(height: 15.0),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20.0),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       TextButton(
                         onPressed: () {
